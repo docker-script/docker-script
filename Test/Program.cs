@@ -29,7 +29,8 @@ dockerfile.AddStage("final", "base", (i) => {
     i.WorkingDir("/app");
     i.CopyFrom("publish", "/app/publish", ".");
     i.Entrypoint("dotnet", "app.dll");
-    i.HttpHealthCheck("https://localhost");
+    i.HttpHealthCheck("http://localhost");
 });
 
-Console.Write(dockerfile.Build());
+Console.Write(dockerfile.Build(new BuildContext() {
+}));

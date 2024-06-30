@@ -33,13 +33,13 @@ public class OnBuildStep : IStageStep
     {
         _instructions = instructions;
     }
-    public string Build()
+    public string Build(BuildContext context)
     {
         StringBuilder sb = new StringBuilder();
         foreach(var stage in _instructions.StageSteps)
         {
             sb.Append("ONBUILD ");
-            sb.Append(stage.Build());
+            sb.Append(stage.Build(context));
             sb.Append(Environment.NewLine);
         }
         return sb.ToString();

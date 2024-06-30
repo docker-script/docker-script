@@ -13,13 +13,13 @@ public class DockerStage: IFluentInterface
         StageSteps = new();
     }
 
-    public string Build()
+    public string Build(BuildContext context)
     {
         StringBuilder sb = new StringBuilder();
         Console.WriteLine($"{StageSteps.Count}");
         foreach(var stage in StageSteps)
         {
-            sb.Append(stage.Build());
+            sb.Append(stage.Build(context));
             sb.Append(Environment.NewLine);
         }
         sb.Append(Environment.NewLine);

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerScript", "DockerScrip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{38448F79-AFEA-4D28-82A7-4A1DB3F547E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KubernetesScript", "KubernetesScript\KubernetesScript.csproj", "{3F538D7B-F5F3-4473-88A0-7D51F81EA986}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{38448F79-AFEA-4D28-82A7-4A1DB3F547E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38448F79-AFEA-4D28-82A7-4A1DB3F547E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38448F79-AFEA-4D28-82A7-4A1DB3F547E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F538D7B-F5F3-4473-88A0-7D51F81EA986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F538D7B-F5F3-4473-88A0-7D51F81EA986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F538D7B-F5F3-4473-88A0-7D51F81EA986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F538D7B-F5F3-4473-88A0-7D51F81EA986}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

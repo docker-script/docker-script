@@ -3,6 +3,6 @@ namespace DockerScript.Interface;
 public interface IStageStep
 {
 
-    public string Build();
+    public string Build(BuildContext context);
 
 }

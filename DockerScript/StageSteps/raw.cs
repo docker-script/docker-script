@@ -29,7 +29,7 @@ public class Raw : IStageStep
         command = sb.ToString();
     }
 
-    public string Build()
+    public string Build(BuildContext context)
     {
         return command;
     }

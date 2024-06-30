@@ -52,7 +52,7 @@ public class Run : IStageStep
         command = sb.ToString();
     }
 
-    public string Build()
+    public string Build(BuildContext context)
     {
         var sb = new StringBuilder();
         sb.Append("RUN ");
